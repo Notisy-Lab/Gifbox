@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Gifbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>GIF<span>BOX</span></h1>
+    <p class="hint">Appuie sur un bouton · <kbd>Espace</kbd> = au hasard · <kbd>F</kbd> = plein écran</p>
+  </header>
+
+  <main>
+    <button id="random" class="random" type="button">🎲 GIF AU HASARD</button>
+    <ol id="grid" class="grid"></ol>
+  </main>
+
+  <div id="stage" class="stage" hidden>
+    <div class="stage-inner">
+      <img id="stage-img" alt="">
+      <div id="stage-fallback" class="fallback" hidden></div>
+    </div>
+    <div class="caption">
+      <span id="stage-rank" class="rank"></span>
+      <span id="stage-title"></span>
+    </div>
+    <div id="progress" class="progress"></div>
+  </div>
+
+  <script src="gifs.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
